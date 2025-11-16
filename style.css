@@ -1,0 +1,161 @@
+/* style.css for Portfolio Website */
+
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  width: 100%;
+  padding: 20px 0;
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* Main Container */
+.container {
+  width: 85%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+/* Profile Section */
+.profile-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+.profile-section img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #1f1f1f;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+
+.profile-info {
+  flex: 1;
+  margin-left: 40px;
+}
+
+.profile-info h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.profile-info p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+/* Sections */
+section {
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #1f1f1f;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  width: 60px;
+  height: 3px;
+  background: #1f1f1f;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  border-radius: 2px;
+}
+
+/* Skills */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.skill-box {
+  background: #f0f0f0;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.skill-box:hover {
+  background: #1f1f1f;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Education */
+.edu-item {
+  margin-bottom: 15px;
+  padding-left: 10px;
+  border-left: 4px solid #1f1f1f;
+}
+
+/* Projects */
+.project {
+  margin-bottom: 25px;
+}
+
+.project h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+.project p {
+  opacity: 0.8;
+  margin-top: 5px;
+}
+
+/* Contact */
+.contact-box p {
+  margin-bottom: 8px;
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background: #1f1f1f;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
